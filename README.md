@@ -36,7 +36,7 @@ Two stretch features are implemented from the tutorial brief. The score animates
 3. Select the branch you pushed and the **Tap Frenzy iOS Build** workflow. The workflow uses a Mac mini M2 and builds for the iOS Simulator with signing disabled.
 4. Check for `Round checks passed` in the scoring and timing step and `** BUILD SUCCEEDED **` in the compile log. Match the commit shown by Codemagic to your submission commit.
 
-Codemagic generates `TapFrenzy.xcodeproj` from `project.yml` when the project is absent. A successful build offers `TapFrenzy-Xcode.zip` in **Artifacts**. It contains the project and its sources. If your submission needs an Xcode project in GitHub, extract the ZIP, copy just `TapFrenzy.xcodeproj` to the repository root, commit it, and rebuild that commit. If you later add or relocate source files, regenerate the project or update its file references in Xcode.
+Codemagic can regenerate `TapFrenzy.xcodeproj` from `project.yml` when needed. A successful build offers `TapFrenzy-Xcode.zip` in **Artifacts**, containing the project and its sources. The native project is committed in this repository, so it can be opened directly after cloning. If you later add or relocate source files, regenerate the project or update its file references in Xcode.
 
 ## Run in a Windows browser
 
@@ -44,7 +44,7 @@ Download `TapFrenzy-Simulator.zip` from the latest successful Codemagic build's 
 
 ## Run and check in Xcode
 
-Extract the artifact, open `TapFrenzy.xcodeproj`, select an iPhone simulator, and press **⌘R**. On a Mac with XcodeGen installed, you can also run `xcodegen generate` in the repository root.
+Open `TapFrenzy.xcodeproj` directly, select an iPhone simulator, and press **⌘R**. The repository now includes the native Xcode project and shared `TapFrenzy` scheme. `project.yml` remains available as the XcodeGen source-of-truth for CI; on a Mac with XcodeGen installed, `xcodegen generate` can regenerate the project after source or build-setting changes.
 
 - Confirm the first tap starts the timer and scores one point. Tap rapidly and watch the score increase.
 - Let the timer expire. Check the final score, best score, and completed round count. Tap **Try again** to start a fresh round.

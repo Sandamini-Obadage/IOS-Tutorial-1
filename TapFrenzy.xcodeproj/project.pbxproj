@@ -1,0 +1,258 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A10000010000000000000001 /* TapFrenzyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000010000000000000001 /* TapFrenzyApp.swift */; };
+		A10000010000000000000002 /* GameRound.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000010000000000000002 /* GameRound.swift */; };
+		A10000010000000000000003 /* GameTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000010000000000000003 /* GameTheme.swift */; };
+		A10000010000000000000004 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000010000000000000004 /* GameView.swift */; };
+		A10000010000000000000005 /* RoundTimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000010000000000000005 /* RoundTimerView.swift */; };
+		A10000010000000000000006 /* TapControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000010000000000000006 /* TapControl.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A20000010000000000000001 /* TapFrenzyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapFrenzyApp.swift; sourceTree = "<group>"; };
+		A20000010000000000000002 /* GameRound.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameRound.swift; sourceTree = "<group>"; };
+		A20000010000000000000003 /* GameTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameTheme.swift; sourceTree = "<group>"; };
+		A20000010000000000000004 /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
+		A20000010000000000000005 /* RoundTimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundTimerView.swift; sourceTree = "<group>"; };
+		A20000010000000000000006 /* TapControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapControl.swift; sourceTree = "<group>"; };
+		A20000010000000000000007 /* TapFrenzy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TapFrenzy.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A30000010000000000000001 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A40000010000000000000001 = {
+			isa = PBXGroup;
+			children = (
+				A40000010000000000000002 /* TapFrenzy */,
+				A40000010000000000000007 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A40000010000000000000002 /* TapFrenzy */ = {
+			isa = PBXGroup;
+			children = (
+				A40000010000000000000003 /* App */,
+				A40000010000000000000004 /* Features */,
+			);
+			path = TapFrenzy;
+			sourceTree = "<group>";
+		};
+		A40000010000000000000003 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				A20000010000000000000001 /* TapFrenzyApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		A40000010000000000000004 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				A40000010000000000000005 /* Game */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		A40000010000000000000005 /* Game */ = {
+			isa = PBXGroup;
+			children = (
+				A40000010000000000000006 /* Model */,
+				A40000010000000000000008 /* Views */,
+			);
+			path = Game;
+			sourceTree = "<group>";
+		};
+		A40000010000000000000006 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A20000010000000000000002 /* GameRound.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A40000010000000000000007 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A20000010000000000000007 /* TapFrenzy.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A40000010000000000000008 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A20000010000000000000003 /* GameTheme.swift */,
+				A20000010000000000000004 /* GameView.swift */,
+				A20000010000000000000005 /* RoundTimerView.swift */,
+				A20000010000000000000006 /* TapControl.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A50000010000000000000001 /* TapFrenzy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A60000010000000000000002 /* Build configuration list for PBXNativeTarget "TapFrenzy" */;
+			buildPhases = (
+				A30000010000000000000002 /* Sources */,
+				A30000010000000000000001 /* Frameworks */,
+				A30000010000000000000003 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TapFrenzy;
+			productName = TapFrenzy;
+			productReference = A20000010000000000000007 /* TapFrenzy.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A50000010000000000000002 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1600;
+				LastUpgradeCheck = 1600;
+			};
+			buildConfigurationList = A60000010000000000000001 /* Build configuration list for PBXProject "TapFrenzy" */;
+			compatibilityVersion = "Xcode 16.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A40000010000000000000001;
+			productRefGroup = A40000010000000000000007 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A50000010000000000000001 /* TapFrenzy */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A30000010000000000000003 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A30000010000000000000002 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A10000010000000000000001 /* TapFrenzyApp.swift in Sources */,
+				A10000010000000000000002 /* GameRound.swift in Sources */,
+				A10000010000000000000003 /* GameTheme.swift in Sources */,
+				A10000010000000000000004 /* GameView.swift in Sources */,
+				A10000010000000000000005 /* RoundTimerView.swift in Sources */,
+				A10000010000000000000006 /* TapControl.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		A70000010000000000000001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A70000010000000000000002 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		A70000010000000000000003 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Tap Frenzy";
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.student.tapfrenzy;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		A70000010000000000000004 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Tap Frenzy";
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.student.tapfrenzy;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A60000010000000000000001 /* Build configuration list for PBXProject "TapFrenzy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A70000010000000000000001 /* Debug */,
+				A70000010000000000000002 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A60000010000000000000002 /* Build configuration list for PBXNativeTarget "TapFrenzy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A70000010000000000000003 /* Debug */,
+				A70000010000000000000004 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A50000010000000000000002 /* Project object */;
+}
