@@ -1,4 +1,8 @@
 name: TapFrenzy
+options:
+  minimumXcodeGenVersion: 2.45.0
+  xcodeVersion: "15.0"
+  projectFormat: xcode15_0
 targets:
   TapFrenzy:
     type: application
@@ -9,6 +13,8 @@ targets:
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.student.tapfrenzy
+        PRODUCT_NAME: TapFrenzy
+        PRODUCT_MODULE_NAME: TapFrenzy
         GENERATE_INFOPLIST_FILE: YES
         INFOPLIST_KEY_CFBundleDisplayName: Tap Frenzy
         INFOPLIST_KEY_UILaunchScreen_Generation: YES

@@ -44,7 +44,17 @@ Download `TapFrenzy-Simulator.zip` from the latest successful Codemagic build's 
 
 ## Run and check in Xcode
 
-Open `TapFrenzy.xcodeproj` directly, select an iPhone simulator, and press **⌘R**. The repository now includes the native Xcode project and shared `TapFrenzy` scheme. `project.yml` remains available as the XcodeGen source-of-truth for CI; on a Mac with XcodeGen installed, `xcodegen generate` can regenerate the project after source or build-setting changes.
+On a Mac with Xcode 15 or newer and an iOS 17 or newer simulator installed:
+
+```sh
+git clone https://github.com/Sandamini-Obadage/IOS-Tutorial-1.git
+cd IOS-Tutorial-1
+open TapFrenzy.xcodeproj
+```
+
+Select the shared **TapFrenzy** scheme and an iPhone simulator, then press **⌘R**. The `.xcodeproj` is committed, so cloning is enough; XcodeGen and the Codemagic artifact are not needed for a local build. To run on a physical iPhone, select your development team in the TapFrenzy target's **Signing & Capabilities** tab and use a bundle identifier available to your team.
+
+`project.yml` is the XcodeGen source for CI and uses the same Xcode 15 project format. After source or build-setting changes, XcodeGen 2.45 or newer can regenerate the project with `xcodegen generate`.
 
 - Confirm the first tap starts the timer and scores one point. Tap rapidly and watch the score increase.
 - Let the timer expire. Check the final score, best score, and completed round count. Tap **Try again** to start a fresh round.
