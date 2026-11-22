@@ -3,6 +3,10 @@ options:
   minimumXcodeGenVersion: 2.45.0
   xcodeVersion: "15.0"
   projectFormat: xcode15_0
+settings:
+  base:
+    SDKROOT: iphoneos
+    SUPPORTED_PLATFORMS: "iphoneos iphonesimulator"
 targets:
   TapFrenzy:
     type: application
